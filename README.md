@@ -14,7 +14,13 @@ curl -sSL https://zipkin.io/quickstart.sh | bash -s
 Then run the jar file
 
 ```
-java -jar zipkin.jar
+java -jar -Dserver.port=8087 zipkin.jar
+```
+
+Then go to browser
+
+```
+http://localhost:8087/zipkin/
 ```
 
 ## Running on K8 (Kubernetes) 
